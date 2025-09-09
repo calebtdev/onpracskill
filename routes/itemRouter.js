@@ -4,6 +4,6 @@ const { getAllItems, createItem, deleteItem } = require('../controllers/itemCont
 
 router.get('/get', getAllItems)
 router.post('/post', createItem)
-router.delete('/delete', deleteItem)
+router.delete('/delete/:id', deleteItem)
 
 module.exports = router
