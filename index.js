@@ -15,7 +15,7 @@ const startServer = async () => {
         await mongoose.connect(MONGO)
         console.log('mongodb connected successfully')
         app.listen(Port, () => {
-            console.log("server started successfully")
+            console.log("server is started successfully")
         })
     } catch (error) {
         console.error(error.message);
